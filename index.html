@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- ========================================================= -->
+        <!-- HEAD -->
+        <!-- Configuración básica + recursos externos -->
+        <!-- ========================================================= -->
+
+        <!-- Título que aparece en la pestaña del navegador -->
+        <title>Racha de registro de llaves</title>
+
+        <!-- Hoja de estilos principal -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- ========================================================= -->
+        <!-- CONTENIDO PRINCIPAL -->
+        <!-- Interfaz simple tipo "Duolingo racha" -->
+        <!-- ========================================================= -->
+        <div class="container">
+            <!-- Título principal -->
+            <h1>Racha de registro de llaves</h1>
+
+            <!-- Indicador visual de la racha actual -->
+            <h2 id="racha">0 días</h2>
+            <img src="img/prohibido.png" class="mascota" id="mascota" style="display:none;">
+
+            <!-- Acción principal del usuario -->
+            <!-- Permite registrar el día actual -->
+            <button id="btnFichar">Fichar hoy</button>
+
+            <!-- Feedback dinámico (mensajes al usuario) -->
+            <p id="mensaje"></p>
+
+            <!-- Script con la lógica de la aplicación -->
+            <script src="app.js"></script>
+
+            <button onclick="resetRacha()" style="display:none;">Reset (dev)</button>
+        </div>
+    </body>
+</html>

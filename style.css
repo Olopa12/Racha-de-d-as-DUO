@@ -1,0 +1,109 @@
+/* ========================================================= */
+/* ESTILOS GENERALES */
+/* Configuración base de la interfaz */
+/* ========================================================= */
+
+body {
+    margin: 0;
+    font-family: system-ui;
+    background: #f7f7f7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ========================================================= */
+/* TARJETA PRINCIPAL */
+/* Contenedor tipo “card” de app */
+/* ========================================================= */
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 380px;
+
+    padding: 30px 20px;
+    border-radius: 20px;
+
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ========================================================= */
+/* TÍTULO */
+/* ========================================================= */
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Racha destacada */
+h2 {
+    font-size: clamp(36px, 10vw, 56px);
+    color: #58cc02;
+}
+
+/* ========================================================= */
+/* BOTÓN PRINCIPAL */
+/* ========================================================= */
+
+button {
+    background: #58cc02;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: transform 0.1s ease, background 0.2s;
+}
+
+button:hover {
+    background: #4cb302;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* ========================================================= */
+/* MENSAJES */
+/* Feedback tipo app */
+/* ========================================================= */
+
+#mensaje {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* =========================================================
+   MASCOTA
+   ========================================================= */
+.mascota {
+    /* Tamaño de la imagen */
+    width: 120px;
+
+    /* Centrado horizontal */
+    display: block;
+    margin: 20px auto; /* 👈 centra la imagen */
+
+    /* Animación de rebote */
+    animation: bounce 2s infinite;
+
+    /* Separación del botón (IMPORTANTE para que no choque) */
+    margin-bottom: 20px;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
